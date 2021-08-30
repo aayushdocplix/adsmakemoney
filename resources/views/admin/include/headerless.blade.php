@@ -8,33 +8,33 @@
     <meta name="description" content="Apex admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Apex admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>Login Page - Apex responsive bootstrap 4 admin template</title>
-    <link rel="shortcut icon" type="image/x-icon" href="{{asset('app-assets/img/ico/favicon.ico')}}">
-    <link rel="shortcut icon" type="image/png" href="{{asset('app-assets/img/ico/favicon-32.png')}}">
+    <title>@yield('title')</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('/public/app-assets/img/ico/favicon.ico')}}">
+    <link rel="shortcut icon" type="image/png" href="{{asset('/public/app-assets/img/ico/favicon-32.png')}}">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <link href="../../css.css?family=Rubik:300,400,500,700,900%7CMontserrat:300,400,500,600,700,800,900" rel="stylesheet">
     <!-- BEGIN VENDOR CSS-->
     <!-- font icons-->
-    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/fonts/feather/style.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/fonts/simple-line-icons/style.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/fonts/font-awesome/css/font-awesome.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/vendors/css/perfect-scrollbar.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/vendors/css/prism.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/vendors/css/switchery.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('/public/app-assets/fonts/feather/style.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('/public/app-assets/fonts/simple-line-icons/style.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('/public/app-assets/fonts/font-awesome/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('/public/app-assets/vendors/css/perfect-scrollbar.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('/public/app-assets/vendors/css/prism.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('/public/app-assets/vendors/css/switchery.min.css')}}">
     <!-- END VENDOR CSS-->
     <!-- BEGIN APEX CSS-->
-    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/css/bootstrap-extended.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/css/colors.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/css/components.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/css/themes/layout-dark.min.css')}}">
-    <link rel="stylesheet" href="{{asset('app-assets/css/plugins/switchery.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('/public/app-assets/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('/public/app-assets/css/bootstrap-extended.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('/public/app-assets/css/colors.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('/public/app-assets/css/components.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('/public/app-assets/css/themes/layout-dark.min.css')}}">
+    <link rel="stylesheet" href="{{asset('/public/app-assets/css/plugins/switchery.min.css')}}">
     <!-- END APEX CSS-->
     <!-- BEGIN Page Level CSS-->
-    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/css/core/menu/horizontal-menu.min.css')}}">
-    <link rel="stylesheet" href="{{asset('app-assets/css/pages/authentication.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('/public/app-assets/css/core/menu/horizontal-menu.min.css')}}">
+    <link rel="stylesheet" href="{{asset('/public/app-assets/css/pages/authentication.css')}}">
     <!-- END Page Level CSS-->
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/style.css')}}">
@@ -53,17 +53,17 @@
     <!-- ////////////////////////////////////////////////////////////////////////////-->
 
     <!-- BEGIN VENDOR JS-->
-    <script src="{{asset('app-assets/vendors/js/vendors.min.js')}}"></script>
-    <script src="{{asset('app-assets/vendors/js/switchery.min.js')}}"></script>
+    <script src="{{asset('/public/app-assets/vendors/js/vendors.min.js')}}"></script>
+    <script src="{{asset('/public/app-assets/vendors/js/switchery.min.js')}}"></script>
     <!-- BEGIN VENDOR JS-->
     <!-- BEGIN PAGE VENDOR JS-->
     <!-- END PAGE VENDOR JS-->
     <!-- BEGIN APEX JS-->
-    <script src="{{asset('app-assets/js/core/app-menu.min.js')}}"></script>
-    <script src="{{asset('app-assets/js/core/app.min.js')}}"></script>
-    <script src="{{asset('app-assets/js/notification-sidebar.min.js')}}"></script>
-    <script src="{{asset('app-assets/js/customizer.min.js')}}"></script>
-    <script src="{{asset('app-assets/js/scroll-top.min.js')}}"></script>
+    <script src="{{asset('/public/app-assets/js/core/app-menu.min.js')}}"></script>
+    <script src="{{asset('/public/app-assets/js/core/app.min.js')}}"></script>
+    <script src="{{asset('/public/app-assets/js/notification-sidebar.min.js')}}"></script>
+    <script src="{{asset('/public/app-assets/js/customizer.min.js')}}"></script>
+    <script src="{{asset('/public/app-assets/js/scroll-top.min.js')}}"></script>
     <!-- END APEX JS-->
     <!-- BEGIN PAGE LEVEL JS-->
     <!-- END PAGE LEVEL JS-->

@@ -158,9 +158,15 @@
                             </a><a class="dropdown-item" href="app-email.html">
                                 <div class="d-flex align-items-center"><i class="ft-mail mr-2"></i><span>My Inbox</span></div>
                             </a>
-                            <div class="dropdown-divider"></div><a class="dropdown-item" href="auth-login.html">
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
                                 <div class="d-flex align-items-center"><i class="ft-power mr-2"></i><span>Logout</span></div>
                             </a>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
                         </div>
                     </li>
                     <li class="nav-item d-none d-lg-block mr-2 mt-1"><a class="nav-link notification-sidebar-toggle" href="javascript:;"><i class="ft-align-right font-medium-3"></i></a></li>
@@ -186,18 +192,20 @@
                         </li>
                         <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="dashboard2.html" data-toggle="dropdown"><i class="ft-arrow-right submenu-icon"></i><span data-i18n="Dashboard 2">Dashboard 2</span></a>
                         </li>
-                    </ul>
+                    </ul> 
                 </li>
-                <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link d-flex align-items-center" href="javascript:;" data-toggle="dropdown"><i class="ft-box"></i><span data-i18n="Apps">Apps</span></a>
+                <li>
+                 <a class="dropdown-item d-flex align-items-center" href="{{url('/genealogy')}}" data-toggle="dropdown"><i class="ft-arrow-right submenu-icon"></i><span data-i18n="Dashboard 2">Genealogy</span></a>
+                </li>   
+                <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link d-flex align-items-center" href="javascript:;" data-toggle="dropdown"><i class="ft-box"></i><span data-i18n="Apps">Pins</span></a>
                     <ul class="dropdown-menu">
-                        <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-email.html" data-toggle="dropdown"><i class="ft-arrow-right submenu-icon"></i><span data-i18n="Email">Email</span></a>
+                        <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-email.html" data-toggle="dropdown"><i class="ft-arrow-right submenu-icon"></i><span data-i18n="Email">View Pins</span></a>
                         </li>
-                        <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-chat.html" data-toggle="dropdown"><i class="ft-arrow-right submenu-icon"></i><span data-i18n="Chat">Chat</span></a>
+                        <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{url('/pin-request')}}" data-toggle="dropdown"><i class="ft-arrow-right submenu-icon"></i><span data-i18n="Chat">Pin Request</span></a>
                         </li>
-                        <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-taskboard.html" data-toggle="dropdown"><i class="ft-arrow-right submenu-icon"></i><span data-i18n="Task Board">Task Board</span></a>
+                        <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-taskboard.html" data-toggle="dropdown"><i class="ft-arrow-right submenu-icon"></i><span data-i18n="Task Board">Top Up</span></a>
                         </li>
-                        <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-calendar.html" data-toggle="dropdown"><i class="ft-arrow-right submenu-icon"></i><span data-i18n="Calendar">Calendar</span></a>
-                        </li>
+                       
                     </ul>
                 </li>
                 <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link d-flex align-items-center" href="javascript:;" data-toggle="dropdown"><i class="ft-aperture"></i><span data-i18n="UI Kit">UI Kit</span></a>

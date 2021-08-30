@@ -23,7 +23,10 @@
     <link rel="stylesheet" type="text/css" href="{{asset('app-assets/vendors/css/perfect-scrollbar.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('app-assets/vendors/css/prism.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('app-assets/vendors/css/switchery.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/vendors/css/pickadate/pickadate.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('app-assets/vendors/css/chartist.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/vendors/css/datatables/dataTables.bootstrap4.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('app-assets/vendors/css/select2.min.css')}}">
     <!-- END VENDOR CSS-->
     <!-- BEGIN APEX CSS-->
     <link rel="stylesheet" type="text/css" href="{{asset('app-assets/css/bootstrap.min.css')}}">
@@ -67,6 +70,13 @@
     <script src="{{asset('app-assets/vendors/js/switchery.min.js')}}"></script>
     <!-- BEGIN VENDOR JS-->
     <!-- BEGIN PAGE VENDOR JS-->
+    <script src="{{asset('app-assets/vendors/js/datatable/jquery.dataTables.min.js')}}"></script>
+    <script src="{{asset('app-assets/vendors/js/datatable/dataTables.bootstrap4.min.js')}}"></script>
+    <script src="{{asset('app-assets/vendors/js/pickadate/picker.js')}}"></script>
+    <script src="{{asset('app-assets/vendors/js/pickadate/picker.date.js')}}"></script>
+    <script src="{{asset('app-assets/vendors/js/pickadate/picker.time.js')}}"></script>
+    <script src="{{asset('app-assets/vendors/js/pickadate/legacy.js')}}"></script>
+    <script src="{{asset('app-assets/vendors/js/select2.full.min.js')}}"></script>
     <script src="{{asset('app-assets/vendors/js/chartist.min.js')}}"></script>
     <!-- END PAGE VENDOR JS-->
     <!-- BEGIN APEX JS-->
@@ -78,10 +88,26 @@
     <!-- END APEX JS-->
     <!-- BEGIN PAGE LEVEL JS-->
     <script src="{{asset('app-assets/js/dashboard1.min.js')}}"></script>
+    <script src="{{asset('app-assets/js/data-tables/dt-advanced-initialization.js')}}"></script>
+    <script src="{{asset('app-assets/js/form-datetimepicker.min.js')}}"></script>
+    <script src="{{asset('app-assets/js/select2.min.js')}}"></script>
     <!-- END PAGE LEVEL JS-->
     <!-- BEGIN: Custom CSS-->
     <script src="{{asset('assets/js/scripts.js')}}"></script>
     <!-- END: Custom CSS-->
+    <script type="text/javascript">
+	$(function () {
+    $('.genealogy-tree ul').hide();
+    $('.genealogy-tree>ul').show();
+    $('.genealogy-tree ul.active').show();
+    $('.genealogy-tree li').on('click', function (e) {
+        var children = $(this).find('> ul');
+        if (children.is(":visible")) children.hide('fast').removeClass('active');
+        else children.show('fast').addClass('active');
+        e.stopPropagation();
+    });
+});
+</script>
 </body>
 <!-- END : Body-->
 
